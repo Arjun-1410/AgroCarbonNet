@@ -1,6 +1,6 @@
 from fastapi import FastAPI, APIRouter, HTTPException, UploadFile, File
+from fastapi.middleware.cors import CORSMiddleware
 from dotenv import load_dotenv
-from starlette.middleware.cors import CORSMiddleware
 from motor.motor_asyncio import AsyncIOMotorClient
 import os
 import logging
@@ -40,6 +40,22 @@ else:
 
 # Create the main app
 app = FastAPI()
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],   # later you can restrict this
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+
+@app.get("/")
+def health():
+    return {
+        "status": "AgroBot backend running 🚀",
+        "db": "disabled",
+        "time": datetime.utcnow()
+    }
 
 # Create a router with the /api prefix
 api_router = APIRouter(prefix="/api")
@@ -528,21 +544,30 @@ async def root():
 
 @api_router.post("/session", response_model=Session)
 async def create_session(language: str = "en"):
-    """Create a new chat session"""
     session = Session(language=language)
-    try:
-        await db.sessions.insert_one(session.dict())
-    except Exception as e:
-         logger.warning(f"Failed to save session to DB: {e}")
+
+    if db:
+        try:
+            await db.sessions.insert_one(session.dict())
+        except Exception as e:
+            logger.warning(f"Failed to save session to DB: {e}")
+    else:
+        logger.info("DB disabled: session not stored")
+
     return session
+
 
 @api_router.get("/session/{session_id}", response_model=Session)
 async def get_session(session_id: str):
     """Get session details"""
-    session = await db.sessions.find_one({"id": session_id})
-    if not session:
-        raise HTTPException(status_code=404, detail="Session not found")
-    return Session(**session)
+   if not db:
+    raise HTTPException(status_code=503, detail="Database disabled")
+
+session = await db.sessions.find_one({"id": session_id})
+if not session:
+    raise HTTPException(status_code=404, detail="Session not found")
+return Session(**session)
+
 
 @api_router.post("/chat", response_model=ChatResponse)
 async def chat(request: ChatRequest):
@@ -608,11 +633,15 @@ async def chat(request: ChatRequest):
             content=response_text,
             language=detected_language
         )
-        
-        try:
-            await db.messages.insert_many([user_msg.dict(), assistant_msg.dict()])
-        except Exception as e:
-            logger.warning(f"Failed to save messages to DB (likely MongoDB connection error): {e}")
+
+    if db:
+    try:
+        await db.messages.insert_many([user_msg.dict(), assistant_msg.dict()])
+    except Exception as e:
+        logger.warning(f"Failed to save messages to DB: {e}")
+else:
+    logger.info("DB disabled: messages not stored")
+
         
         return ChatResponse(
             response=response_text,
@@ -629,8 +658,12 @@ async def chat(request: ChatRequest):
 @api_router.get("/messages/{session_id}", response_model=List[ChatMessage])
 async def get_messages(session_id: str):
     """Get chat history for a session"""
-    messages = await db.messages.find({"session_id": session_id}).sort("timestamp", 1).to_list(100)
-    return [ChatMessage(**msg) for msg in messages]
+    if not db:
+    raise HTTPException(status_code=503, detail="Database disabled")
+
+messages = await db.messages.find({"session_id": session_id}).sort("timestamp", 1).to_list(100)
+return [ChatMessage(**msg) for msg in messages]
+
 
 @api_router.post("/predict", response_model=MLPrediction)
 async def predict(farm_input: FarmInput):
@@ -1066,13 +1099,6 @@ async def get_seasonal_chart(crop: str):
 # Include the router in the main app
 app.include_router(api_router)
 
-app.add_middleware(
-    CORSMiddleware,
-    allow_credentials=True,
-    allow_origins=["*"],
-    allow_methods=["*"],
-    allow_headers=["*"],
-)
 
 @app.on_event("shutdown")
 async def shutdown_db_client():
