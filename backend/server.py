@@ -17,11 +17,13 @@ import base64
 import httpx
 
 # Import knowledge base
-from crop_knowledge import (
+from backend.crop_knowledge import (
     CROP_KNOWLEDGE, STATE_AGRI_INFO, PEST_DISEASE_CONTROL, GOVT_SCHEMES,
     get_crop_info, get_state_info
 )
-from weather_service import get_weather_advisory, weather_service
+
+from backend.weather_service import get_weather_advisory, weather_service
+
 
 ROOT_DIR = Path(__file__).parent
 load_dotenv(ROOT_DIR / '.env')
