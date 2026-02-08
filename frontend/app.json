@@ -1,0 +1,66 @@
+{
+  "expo": {
+    "name": "Farmer Voice Assistant",
+    "slug": "farmer-voice-assistant",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "farmer-voice-assistant",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSMicrophoneUsageDescription": "Voice input for hands-free farming queries",
+        "NSCameraUsageDescription": "Capture crop images for pest identification",
+        "NSPhotoLibraryUsageDescription": "Select crop images for pest analysis",
+        "NSSpeechRecognitionUsageDescription": "Convert voice to text for farming queries"
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundColor": "#2E7D32"
+      },
+      "edgeToEdgeEnabled": true,
+      "permissions": [
+        "android.permission.RECORD_AUDIO",
+        "android.permission.CAMERA",
+        "android.permission.READ_EXTERNAL_STORAGE"
+      ]
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/splash-icon.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#2E7D32"
+        }
+      ],
+      [
+        "expo-av",
+        {
+          "microphonePermission": "Allow Farmer Assistant to access your microphone for voice input"
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Allow Farmer Assistant to access photos for crop analysis",
+          "cameraPermission": "Allow Farmer Assistant to take photos of crops for pest identification"
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}

@@ -1,0 +1,146 @@
+State,District,Crop,Season,Crop_Year,Area_Hectares,Production_Tonnes,Yield_Kg_Ha,Soil_Type,Annual_Rainfall_mm,Irrigation_Percent,Fertilizer_Kg_Ha,Temperature_Avg_C
+Andhra Pradesh,Guntur,Rice,Kharif,2023,450000,2250000,5000,Alluvial,950,85,180,28
+Andhra Pradesh,Guntur,Rice,Rabi,2023,380000,1900000,5000,Alluvial,200,95,200,24
+Andhra Pradesh,Krishna,Rice,Kharif,2023,520000,2860000,5500,Alluvial,1000,90,190,27
+Andhra Pradesh,East Godavari,Rice,Kharif,2023,480000,2640000,5500,Alluvial,1100,88,185,28
+Andhra Pradesh,West Godavari,Rice,Kharif,2023,410000,2255000,5500,Alluvial,1050,92,195,27
+Andhra Pradesh,Nellore,Rice,Kharif,2023,350000,1750000,5000,Red,850,75,170,29
+Andhra Pradesh,Prakasam,Cotton,Kharif,2023,280000,476000,1700,Black,650,45,150,30
+Andhra Pradesh,Kurnool,Groundnut,Kharif,2023,320000,480000,1500,Red,550,35,120,31
+Andhra Pradesh,Anantapur,Groundnut,Kharif,2023,450000,540000,1200,Red,500,25,100,32
+Andhra Pradesh,Chittoor,Sugarcane,Annual,2023,85000,6800000,80000,Alluvial,900,95,250,26
+Punjab,Ludhiana,Wheat,Rabi,2023,380000,1900000,5000,Alluvial,450,98,220,18
+Punjab,Amritsar,Wheat,Rabi,2023,420000,2100000,5000,Alluvial,500,97,215,17
+Punjab,Jalandhar,Wheat,Rabi,2023,350000,1750000,5000,Alluvial,480,96,210,18
+Punjab,Patiala,Wheat,Rabi,2023,400000,2000000,5000,Alluvial,520,98,225,17
+Punjab,Bathinda,Wheat,Rabi,2023,320000,1600000,5000,Alluvial,350,95,200,19
+Punjab,Ludhiana,Rice,Kharif,2023,290000,1740000,6000,Alluvial,650,99,230,29
+Punjab,Amritsar,Rice,Kharif,2023,310000,1860000,6000,Alluvial,700,98,225,28
+Punjab,Sangrur,Rice,Kharif,2023,280000,1680000,6000,Alluvial,600,97,220,29
+Punjab,Moga,Rice,Kharif,2023,250000,1500000,6000,Alluvial,580,98,218,28
+Punjab,Ferozepur,Cotton,Kharif,2023,180000,324000,1800,Alluvial,400,85,160,31
+Haryana,Karnal,Wheat,Rabi,2023,280000,1400000,5000,Alluvial,500,95,200,18
+Haryana,Kurukshetra,Wheat,Rabi,2023,250000,1250000,5000,Alluvial,520,94,195,17
+Haryana,Ambala,Wheat,Rabi,2023,220000,1100000,5000,Alluvial,550,92,190,18
+Haryana,Hisar,Wheat,Rabi,2023,350000,1575000,4500,Alluvial,380,88,180,19
+Haryana,Sirsa,Cotton,Kharif,2023,280000,504000,1800,Alluvial,350,75,155,32
+Haryana,Karnal,Rice,Kharif,2023,200000,1100000,5500,Alluvial,700,96,210,29
+Haryana,Panipat,Rice,Kharif,2023,180000,990000,5500,Alluvial,680,94,205,28
+Uttar Pradesh,Meerut,Wheat,Rabi,2023,450000,2025000,4500,Alluvial,600,85,175,18
+Uttar Pradesh,Muzaffarnagar,Wheat,Rabi,2023,380000,1710000,4500,Alluvial,650,82,170,17
+Uttar Pradesh,Saharanpur,Wheat,Rabi,2023,320000,1440000,4500,Alluvial,700,80,165,17
+Uttar Pradesh,Agra,Wheat,Rabi,2023,400000,1600000,4000,Alluvial,500,75,160,20
+Uttar Pradesh,Aligarh,Wheat,Rabi,2023,350000,1400000,4000,Alluvial,550,78,165,19
+Uttar Pradesh,Lucknow,Rice,Kharif,2023,280000,1120000,4000,Alluvial,900,70,150,28
+Uttar Pradesh,Varanasi,Rice,Kharif,2023,320000,1280000,4000,Alluvial,950,65,145,29
+Uttar Pradesh,Gorakhpur,Rice,Kharif,2023,380000,1520000,4000,Alluvial,1100,60,140,28
+Uttar Pradesh,Sitapur,Sugarcane,Annual,2023,150000,10500000,70000,Alluvial,950,85,280,26
+Uttar Pradesh,Lakhimpur,Sugarcane,Annual,2023,180000,12600000,70000,Alluvial,1000,88,290,25
+Madhya Pradesh,Indore,Soybean,Kharif,2023,520000,1040000,2000,Black,900,35,130,27
+Madhya Pradesh,Ujjain,Soybean,Kharif,2023,480000,960000,2000,Black,850,32,125,28
+Madhya Pradesh,Dewas,Soybean,Kharif,2023,420000,840000,2000,Black,880,30,120,27
+Madhya Pradesh,Vidisha,Wheat,Rabi,2023,350000,1225000,3500,Black,700,65,155,20
+Madhya Pradesh,Sagar,Wheat,Rabi,2023,320000,1120000,3500,Black,750,60,150,21
+Madhya Pradesh,Hoshangabad,Wheat,Rabi,2023,280000,1120000,4000,Black,800,70,165,19
+Madhya Pradesh,Chhindwara,Cotton,Kharif,2023,180000,270000,1500,Black,1100,25,110,26
+Maharashtra,Nagpur,Cotton,Kharif,2023,450000,675000,1500,Black,1000,30,115,28
+Maharashtra,Amravati,Cotton,Kharif,2023,520000,780000,1500,Black,950,28,110,29
+Maharashtra,Akola,Cotton,Kharif,2023,480000,720000,1500,Black,900,25,105,30
+Maharashtra,Yavatmal,Cotton,Kharif,2023,420000,630000,1500,Black,920,27,108,29
+Maharashtra,Wardha,Cotton,Kharif,2023,350000,525000,1500,Black,980,30,112,28
+Maharashtra,Nashik,Sugarcane,Annual,2023,120000,9600000,80000,Black,700,90,300,25
+Maharashtra,Kolhapur,Sugarcane,Annual,2023,150000,12750000,85000,Laterite,1200,95,320,24
+Maharashtra,Sangli,Sugarcane,Annual,2023,140000,11900000,85000,Black,650,92,310,25
+Maharashtra,Pune,Jowar,Kharif,2023,280000,392000,1400,Black,700,45,90,26
+Maharashtra,Solapur,Jowar,Rabi,2023,320000,480000,1500,Black,600,50,95,24
+Gujarat,Ahmedabad,Cotton,Kharif,2023,380000,684000,1800,Black,750,55,140,30
+Gujarat,Rajkot,Cotton,Kharif,2023,450000,810000,1800,Black,600,50,135,31
+Gujarat,Junagadh,Groundnut,Kharif,2023,520000,832000,1600,Black,700,40,125,29
+Gujarat,Surat,Sugarcane,Annual,2023,95000,7600000,80000,Alluvial,1200,92,290,27
+Gujarat,Bharuch,Cotton,Kharif,2023,280000,504000,1800,Black,850,48,138,29
+Gujarat,Mehsana,Wheat,Rabi,2023,180000,720000,4000,Alluvial,500,80,175,20
+Gujarat,Banaskantha,Wheat,Rabi,2023,220000,880000,4000,Alluvial,450,75,170,21
+Rajasthan,Jaipur,Wheat,Rabi,2023,280000,980000,3500,Alluvial,500,70,155,19
+Rajasthan,Alwar,Wheat,Rabi,2023,250000,875000,3500,Alluvial,550,68,150,20
+Rajasthan,Bharatpur,Wheat,Rabi,2023,220000,770000,3500,Alluvial,580,65,145,20
+Rajasthan,Sri Ganganagar,Wheat,Rabi,2023,350000,1400000,4000,Alluvial,250,90,180,18
+Rajasthan,Hanumangarh,Wheat,Rabi,2023,320000,1280000,4000,Alluvial,280,88,175,19
+Rajasthan,Jodhpur,Bajra,Kharif,2023,450000,450000,1000,Sandy,350,20,60,33
+Rajasthan,Bikaner,Bajra,Kharif,2023,380000,342000,900,Sandy,250,15,50,34
+Rajasthan,Nagaur,Bajra,Kharif,2023,420000,420000,1000,Sandy,400,25,65,32
+Karnataka,Belgaum,Sugarcane,Annual,2023,180000,14400000,80000,Black,850,88,295,26
+Karnataka,Bagalkot,Sugarcane,Annual,2023,150000,12000000,80000,Black,600,90,300,27
+Karnataka,Dharwad,Maize,Kharif,2023,280000,1400000,5000,Black,800,55,160,25
+Karnataka,Haveri,Maize,Kharif,2023,250000,1250000,5000,Black,850,52,155,26
+Karnataka,Shimoga,Rice,Kharif,2023,180000,810000,4500,Laterite,2500,70,140,27
+Karnataka,Mysore,Rice,Kharif,2023,220000,990000,4500,Red,900,75,145,26
+Karnataka,Mandya,Rice,Kharif,2023,200000,900000,4500,Red,800,80,150,25
+Karnataka,Hassan,Rice,Kharif,2023,190000,855000,4500,Laterite,1200,72,142,24
+Karnataka,Raichur,Cotton,Kharif,2023,320000,480000,1500,Black,650,35,105,30
+Tamil Nadu,Thanjavur,Rice,Kharif,2023,280000,1540000,5500,Alluvial,1000,90,185,28
+Tamil Nadu,Tiruvarur,Rice,Kharif,2023,250000,1375000,5500,Alluvial,1050,92,188,27
+Tamil Nadu,Nagapattinam,Rice,Kharif,2023,220000,1210000,5500,Alluvial,1100,88,182,28
+Tamil Nadu,Cuddalore,Rice,Kharif,2023,200000,1100000,5500,Alluvial,1150,85,178,27
+Tamil Nadu,Erode,Sugarcane,Annual,2023,95000,7600000,80000,Red,700,92,305,26
+Tamil Nadu,Coimbatore,Sugarcane,Annual,2023,85000,6800000,80000,Red,650,90,298,27
+Tamil Nadu,Salem,Maize,Kharif,2023,180000,900000,5000,Red,800,60,155,28
+Tamil Nadu,Namakkal,Maize,Kharif,2023,150000,750000,5000,Red,750,58,150,29
+Tamil Nadu,Madurai,Cotton,Kharif,2023,120000,180000,1500,Black,850,45,115,30
+Telangana,Karimnagar,Rice,Kharif,2023,320000,1600000,5000,Red,900,80,175,28
+Telangana,Warangal,Rice,Kharif,2023,350000,1750000,5000,Red,950,78,172,28
+Telangana,Nizamabad,Rice,Kharif,2023,280000,1400000,5000,Black,850,82,180,27
+Telangana,Khammam,Rice,Kharif,2023,300000,1500000,5000,Alluvial,1100,75,168,28
+Telangana,Nalgonda,Cotton,Kharif,2023,250000,375000,1500,Black,700,40,108,30
+Telangana,Adilabad,Cotton,Kharif,2023,280000,420000,1500,Black,950,35,102,29
+Telangana,Mahbubnagar,Maize,Kharif,2023,180000,720000,4000,Red,650,50,140,29
+West Bengal,Burdwan,Rice,Kharif,2023,380000,1520000,4000,Alluvial,1400,65,145,28
+West Bengal,Hooghly,Rice,Kharif,2023,320000,1280000,4000,Alluvial,1500,68,148,27
+West Bengal,Midnapore,Rice,Kharif,2023,450000,1800000,4000,Alluvial,1450,60,140,28
+West Bengal,Nadia,Rice,Kharif,2023,350000,1400000,4000,Alluvial,1550,70,152,27
+West Bengal,Murshidabad,Rice,Kharif,2023,400000,1600000,4000,Alluvial,1350,62,142,28
+West Bengal,Malda,Wheat,Rabi,2023,120000,360000,3000,Alluvial,600,55,130,18
+West Bengal,Cooch Behar,Rice,Kharif,2023,280000,1120000,4000,Alluvial,2800,50,135,27
+Bihar,Patna,Rice,Kharif,2023,280000,980000,3500,Alluvial,1100,55,130,29
+Bihar,Bhagalpur,Rice,Kharif,2023,250000,875000,3500,Alluvial,1050,52,125,28
+Bihar,Muzaffarpur,Rice,Kharif,2023,320000,1120000,3500,Alluvial,1200,50,128,28
+Bihar,Darbhanga,Rice,Kharif,2023,350000,1225000,3500,Alluvial,1250,48,122,29
+Bihar,Gaya,Wheat,Rabi,2023,220000,660000,3000,Alluvial,800,60,140,19
+Bihar,Nalanda,Wheat,Rabi,2023,180000,540000,3000,Alluvial,850,58,135,18
+Bihar,Rohtas,Wheat,Rabi,2023,250000,750000,3000,Alluvial,750,62,145,19
+Bihar,Katihar,Maize,Kharif,2023,150000,525000,3500,Alluvial,1300,45,115,28
+Odisha,Cuttack,Rice,Kharif,2023,280000,980000,3500,Alluvial,1400,60,130,28
+Odisha,Puri,Rice,Kharif,2023,250000,875000,3500,Alluvial,1500,58,128,27
+Odisha,Balasore,Rice,Kharif,2023,300000,1050000,3500,Alluvial,1600,55,125,28
+Odisha,Sambalpur,Rice,Kharif,2023,220000,770000,3500,Red,1350,50,120,28
+Odisha,Ganjam,Rice,Kharif,2023,350000,1225000,3500,Alluvial,1200,52,122,29
+Odisha,Mayurbhanj,Rice,Kharif,2023,280000,980000,3500,Red,1450,48,118,27
+Assam,Nagaon,Rice,Kharif,2023,280000,840000,3000,Alluvial,2200,35,100,28
+Assam,Barpeta,Rice,Kharif,2023,250000,750000,3000,Alluvial,2400,32,95,27
+Assam,Kamrup,Rice,Kharif,2023,220000,660000,3000,Alluvial,2100,38,102,27
+Assam,Sonitpur,Rice,Kharif,2023,200000,600000,3000,Alluvial,2000,40,105,28
+Assam,Dibrugarh,Rice,Kharif,2023,180000,540000,3000,Alluvial,2300,30,92,27
+Chhattisgarh,Raipur,Rice,Kharif,2023,380000,1330000,3500,Red,1300,55,125,28
+Chhattisgarh,Durg,Rice,Kharif,2023,320000,1120000,3500,Black,1250,52,122,28
+Chhattisgarh,Bilaspur,Rice,Kharif,2023,280000,980000,3500,Red,1350,48,118,27
+Chhattisgarh,Rajnandgaon,Rice,Kharif,2023,250000,875000,3500,Red,1200,50,120,28
+Chhattisgarh,Bastar,Rice,Kharif,2023,200000,600000,3000,Laterite,1500,30,90,27
+Jharkhand,Ranchi,Rice,Kharif,2023,220000,660000,3000,Red,1300,40,105,26
+Jharkhand,Hazaribagh,Rice,Kharif,2023,200000,600000,3000,Red,1250,38,100,27
+Jharkhand,Dhanbad,Rice,Kharif,2023,180000,540000,3000,Red,1200,35,95,27
+Jharkhand,Dumka,Rice,Kharif,2023,250000,750000,3000,Red,1350,32,92,26
+Jharkhand,Giridih,Wheat,Rabi,2023,120000,300000,2500,Red,800,45,115,18
+Kerala,Palakkad,Rice,Kharif,2023,120000,360000,3000,Laterite,2500,55,110,28
+Kerala,Alappuzha,Rice,Kharif,2023,95000,285000,3000,Alluvial,2800,50,105,27
+Kerala,Thrissur,Rice,Kharif,2023,85000,255000,3000,Laterite,2600,52,108,27
+Kerala,Ernakulam,Rice,Kharif,2023,75000,225000,3000,Laterite,2700,48,102,28
+Kerala,Wayanad,Rice,Kharif,2023,65000,195000,3000,Laterite,3000,45,98,25
+Himachal Pradesh,Kangra,Wheat,Rabi,2023,85000,212500,2500,Mountain,1200,40,100,15
+Himachal Pradesh,Mandi,Wheat,Rabi,2023,75000,187500,2500,Mountain,1100,38,95,14
+Himachal Pradesh,Una,Wheat,Rabi,2023,65000,162500,2500,Mountain,1000,42,102,16
+Himachal Pradesh,Shimla,Maize,Kharif,2023,55000,137500,2500,Mountain,1400,30,85,18
+Himachal Pradesh,Solan,Maize,Kharif,2023,60000,150000,2500,Mountain,1350,32,88,19
+Uttarakhand,Dehradun,Wheat,Rabi,2023,75000,225000,3000,Mountain,1200,45,110,17
+Uttarakhand,Haridwar,Wheat,Rabi,2023,95000,332500,3500,Alluvial,1100,55,125,18
+Uttarakhand,Nainital,Wheat,Rabi,2023,65000,195000,3000,Mountain,1300,40,105,15
+Uttarakhand,Udham Singh Nagar,Rice,Kharif,2023,85000,340000,4000,Alluvial,1400,60,135,27
+Uttarakhand,Pauri,Rice,Kharif,2023,55000,165000,3000,Mountain,1500,35,95,25
