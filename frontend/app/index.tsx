@@ -279,20 +279,18 @@ export default function FarmerVoiceAssistant() {
     }
   };
 
-const sendMessage = async (text: string) => {
+const sendMessage = async () => {
   try {
-    console.log("BACKEND_URL:", BACKEND_URL);
-    console.log("Sending to:", `${BACKEND_URL}/api/chat`);
+    const response = await fetch("https://agrocarbonnet.onrender.com/api/");
+    const data = await response.json();
+    console.log("SUCCESS:", data);
+    alert("Backend reachable");
+  } catch (error) {
+    console.log("ERROR:", error);
+    alert("Backend NOT reachable");
+  }
+};
 
-    const response = await fetch(`${BACKEND_URL}/api/chat`, {
-      method: 'POST',
-      body: JSON.stringify({
-        session_id: sessionId,
-        message: text,
-        language: language,
-        farm_context: farmContext.crop_type ? farmContext : null,
-      }),
-    });
 
     console.log("Response status:", response.status);
 
