@@ -279,8 +279,31 @@ export default function FarmerVoiceAssistant() {
     }
   };
 
-  const sendMessage = async (text: string) => {
-    if (!text.trim()) return;
+const sendMessage = async (text: string) => {
+  try {
+    console.log("BACKEND_URL:", BACKEND_URL);
+    console.log("Sending to:", `${BACKEND_URL}/api/chat`);
+
+    const response = await fetch(`${BACKEND_URL}/api/chat`, {
+      method: 'POST',
+      body: JSON.stringify({
+        session_id: sessionId,
+        message: text,
+        language: language,
+        farm_context: farmContext.crop_type ? farmContext : null,
+      }),
+    });
+
+    console.log("Response status:", response.status);
+
+    const data = await response.json();
+    console.log("Response data:", data);
+
+  } catch (error) {
+    console.log("FULL ERROR:", error);
+  }
+};
+
 
     const userMessage: Message = {
       id: `msg_${Date.now()}`,
