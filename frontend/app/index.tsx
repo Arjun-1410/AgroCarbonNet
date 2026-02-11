@@ -148,16 +148,19 @@ export default function FarmerVoiceAssistant() {
     }
 
     try {
-      const response = await fetch(`${BACKEND_URL}/api/weather/${encodeURIComponent(farmContext.location)}?language=${language}`);
-      const data = await response.json();
-      if (!data.error) {
-        setWeatherData(data);
-        setShowWeatherModal(true);
-      }
-    } catch (error) {
-      console.error('Weather fetch error:', error);
-    }
-  };
+     const response = await fetch(`${BACKEND_URL}/api/chat`, {
+  method: "POST",
+  headers: {
+    Accept: "application/json",
+  },
+  body: JSON.stringify({
+    session_id: sessionId,
+    message: text,
+    language: language,
+    farm_context: farmContext.crop_type ? farmContext : null,
+  }),
+});
+
 
   const pickImage = async () => {
     const { status } = await ImagePicker.requestMediaLibraryPermissionsAsync();
