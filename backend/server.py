@@ -560,13 +560,14 @@ async def create_session(language: str = "en"):
 @api_router.get("/session/{session_id}", response_model=Session)
 async def get_session(session_id: str):
     """Get session details"""
-   if not db:
-    raise HTTPException(status_code=503, detail="Database disabled")
+    if not db:
+        raise HTTPException(status_code=503, detail="Database disabled")
 
-session = await db.sessions.find_one({"id": session_id})
-if not session:
-    raise HTTPException(status_code=404, detail="Session not found")
-return Session(**session)
+    session = await db.sessions.find_one({"id": session_id})
+    if not session:
+        raise HTTPException(status_code=404, detail="Session not found")
+
+    return Session(**session)
 
 
 @api_router.post("/chat", response_model=ChatResponse)
