@@ -21,7 +21,7 @@ import { Audio } from 'expo-av';
 import * as ImagePicker from 'expo-image-picker';
 import { BarChart, PieChart } from 'react-native-gifted-charts';
 
-const BACKEND_URL = process.env.EXPO_PUBLIC_BACKEND_URL;
+const BACKEND_URL = "https://agrocarbonnet.onrender.com";
 const { width } = Dimensions.get('window');
 
 // Language configurations
