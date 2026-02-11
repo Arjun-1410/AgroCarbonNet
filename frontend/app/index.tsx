@@ -295,18 +295,19 @@ export default function FarmerVoiceAssistant() {
     setIsLoading(true);
 
     try {
-      const response = await fetch(`${BACKEND_URL}/api/chat`, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          session_id: sessionId,
-          message: text,
-          language: language,
-          farm_context: farmContext.crop_type ? farmContext : null,
-        }),
-      });
+    const response = await fetch(`${BACKEND_URL}/api/chat`, {
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json',
+  },
+  body: JSON.stringify({
+    session_id: sessionId,
+    message: text,
+    language: language,
+    farm_context: farmContext.crop_type ? farmContext : null,
+  }),
+});
+
 
       if (!response.ok) {
         throw new Error('Failed to get response');
